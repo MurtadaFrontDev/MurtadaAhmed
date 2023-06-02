@@ -207,6 +207,10 @@ body {
     .main .container .left_side {
         text-align: center;
     }
+    .main .container .right_side img:nth-child(1){
+
+        min-width: 40%;
+    }
     .main .container .right_side img:nth-child(2) {
         min-width: 40%;
     }
