@@ -177,6 +177,7 @@ body {
 .main .container .right_side img:nth-child(1){
 
     min-width: 40%;
+    
     object-fit: contain;
 }
 .main .container .right_side img:nth-child(2){
