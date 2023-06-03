@@ -32,6 +32,9 @@
 }
 
 /* Basic */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--ff-QS);
     background-color: var(--main-white);
