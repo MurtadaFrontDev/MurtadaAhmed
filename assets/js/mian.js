@@ -18,3 +18,15 @@ function closeSlideBar() {
 }
 
 // Make Light and Dark mode
+
+let dark = document.getElementById("dark");
+let light = document.getElementById("light");
+
+dark.addEventListener("click", () => {
+  dark.classList.add("dark_mode_none");
+  light.classList.remove("dark_mode_none");
+});
+light.addEventListener("click", () => {
+  dark.classList.remove("dark_mode_none");
+  light.classList.add("dark_mode_none");
+});

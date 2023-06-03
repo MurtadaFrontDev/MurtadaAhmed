@@ -482,12 +482,15 @@ transition: var(--transition);
     border-radius: 50%;
     font-size: var(--font-size-1-7);
     cursor: pointer;
+    background-color: var(--main-white);
+    z-index: 9999;
 }
 .dark_mode i::before{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    /* background-color: var(--main-white); */
 }
 .dark_mode_none{
     display: none;
