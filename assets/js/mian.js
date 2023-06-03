@@ -13,3 +13,6 @@ closeSileBar.addEventListener("click", function () {
 });
 
 // close Multiple Elements
+function closeSlideBar() {
+  slidNavBar.classList.remove("toogle_slide_bar");
+}
