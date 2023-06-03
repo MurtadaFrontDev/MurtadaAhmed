@@ -19,6 +19,7 @@
     --smal-font-size: 1.3rem;
     --title--font-size: 3.5rem;
     --medium-font-size: 1.4rem;
+    --font-size-1-7: 1.7rem;
     --parg-font-size: 1.2rem;
     --fw-normal: 400;
     --fw-medium: 500;
@@ -465,4 +466,29 @@ transition: var(--transition);
         right: 0;
     }
     
+}
+
+/* Dark mode */
+
+.dark_mode i {
+    color: #011627;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 0px 0px 14px 8px rgba(1,22,39,0.19);
+    /* padding: 20px; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: var(--font-size-1-7);
+    cursor: pointer;
+}
+.dark_mode i::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.dark_mode_none{
+    display: none;
 }

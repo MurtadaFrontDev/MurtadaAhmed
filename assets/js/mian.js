@@ -16,3 +16,5 @@ closeSileBar.addEventListener("click", function () {
 function closeSlideBar() {
   slidNavBar.classList.remove("toogle_slide_bar");
 }
+
+// Make Light and Dark mode
