@@ -58,8 +58,17 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: var(--dark-blue);
+    color: var(--main-white);
+    font-size: var(--medium-font-size);
+    font-weight: var(--fw-medium);
+    padding: 1rem 3rem;
+    border-radius: 2.875rem;
+    transition: var(--transition);
 }
-
+.btn:hover {
+    background-color: var(--light-blue);
+}
 @media screen and (max-width:768px) {
     :root {
         /* Margin */
@@ -290,19 +299,6 @@ body {
     font-weight: var(--fw-bold);
 }
 
-.about .container .left_side .seework {
-    background-color: var(--dark-blue);
-    color: var(--main-white);
-    font-size: var(--medium-font-size);
-    font-weight: var(--fw-medium);
-    padding: 1rem 3rem;
-    border-radius: 2.875rem;
-    transition: var(--transition);
-}
-
-.about .container .left_side .seework:hover {
-    background-color: var(--light-blue);
-}
 
 .about .container .right_side {
     position: relative;
@@ -338,11 +334,56 @@ body {
     }
 
 }
+/* ==== WORKS ==== */
+.works .title {
+    margin-bottom:var(--mb-3) ;
+}
+.works .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+    gap: calc(var(--gap) * 2);
+    margin-bottom: var(--mb-3);
+}
+.works .project .title_project {
+    font-size: var(--big-font-size);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--mb-2);
+} 
+.works .project .subject_project {
+    font-size: var(--parg-font-size);
+    color: var(--dark-blue);
+    font-weight: var(--medium-font-size);
+    margin-bottom: var(--mb-2);
+}
+.works .project ul {
+    margin-bottom: var(--mb-1-5);
+    font-size: var(--big-font-size);
+    display: flex;
+    gap: var(--gap);
 
-
-
-
-
+}
+.works .project ul i {
+    cursor: pointer;
+    transition: var(--transition);
+    color: #011627;
+}
+.works .project ul i:hover {
+    transform: scale(1.1);
+}
+.works .project .preview_project a img{
+    box-shadow: 0px 0px 14px 4px rgba(1,22,39,0.2);
+-webkit-box-shadow: 0px 0px 14px 4px rgba(1,22,39,0.2);
+-moz-box-shadow: 0px 0px 14px 4px rgba(1,22,39,0.2);
+border-radius: 16px;
+transition: var(--transition);
+}
+.works .project .preview_project a img:hover {
+    box-shadow: 0px 0px 14px 8px rgba(1,22,39,0.3);
+-webkit-box-shadow: 0px 0px 14px 8px rgba(1,22,39,0.3);
+-moz-box-shadow: 0px 0px 14px 8px rgba(1,22,39,0.3);
+}
 
 /* ==== SLIDE NAV BAR */
 .slid_nav_bar {
