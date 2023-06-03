@@ -346,6 +346,7 @@ body {
 
 /* ==== SLIDE NAV BAR */
 .slid_nav_bar {
+    display: none;
     height: 100vh;
     z-index: 9999;
     width: 360px;
@@ -359,17 +360,18 @@ body {
     transition: var(--transition);
 
 }
-.slid_nav_bar .links ul{
+.slid_nav_bar .links  {
     margin-top: var(--mb-3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap);
 }
-.slid_nav_bar .links ul li {
-
-    background-color: #000;
+.slid_nav_bar .links li {
+    text-align: center;
+    margin-bottom: var(--mb-2) ;
+    cursor: pointer;
+}
+.slid_nav_bar .links li a {
+    padding: 1rem 3rem;
+    color: var(--main-black);
+    font-size: var(--medium-font-size);
 }
 
 .toogle_slide_bar{
@@ -381,8 +383,10 @@ body {
 .header_slide_bar {
     font-size: var(--smal-font-size);
 }
-.header_slide_bar i {
-    cursor: pointer;
+@media screen and (max-width:768px){
+    .slid_nav_bar {
+        display: block;
+    }
 }
 @media screen and (max-width:470px) {
     .slid_nav_bar {

@@ -11,3 +11,5 @@ barsIcon.addEventListener("click", function () {
 closeSileBar.addEventListener("click", function () {
   slidNavBar.classList.remove("toogle_slide_bar");
 });
+
+// close Multiple Elements
