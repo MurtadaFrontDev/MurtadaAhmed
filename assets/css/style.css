@@ -120,7 +120,9 @@ body {
 .header .container .nav_icon {
     display: none;
 }
-
+.header .container .nav_icon i {
+    cursor: pointer;
+}
 /* ==== Responsev Of HEADER ==== */
 @media screen and (max-width: 768px) {
     .header .container .nav_bar {
@@ -335,4 +337,60 @@ body {
         display: none;
     }
 
+}
+
+
+
+
+
+
+/* ==== SLIDE NAV BAR */
+.slid_nav_bar {
+    height: 100vh;
+    z-index: 9999;
+    width: 360px;
+    background-color: var(--main-white);
+    position: fixed;
+    right: -370px;
+    top: 0;
+    box-shadow: -4px 1px 11px -2px rgba(1,22,39,0.92);
+    -webkit-box-shadow: -4px 1px 11px -2px rgba(1,22,39,0.92);
+    -moz-box-shadow: -4px 1px 11px -2px rgba(1,22,39,0.92);
+    transition: var(--transition);
+
+}
+.slid_nav_bar .links ul{
+    margin-top: var(--mb-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+.slid_nav_bar .links ul li {
+
+    background-color: #000;
+}
+
+.toogle_slide_bar{
+    right: 0;
+}
+.toogle_slide_bar i {
+    cursor: pointer;
+}
+.header_slide_bar {
+    font-size: var(--smal-font-size);
+}
+.header_slide_bar i {
+    cursor: pointer;
+}
+@media screen and (max-width:470px) {
+    .slid_nav_bar {
+        width: 100%;
+        right: -103%;
+    }
+    .toogle_slide_bar{
+        right: 0;
+    }
+    
 }
