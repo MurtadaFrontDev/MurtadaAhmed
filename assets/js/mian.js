@@ -21,12 +21,62 @@ function closeSlideBar() {
 
 let dark = document.getElementById("dark");
 let light = document.getElementById("light");
+let darkTheme;
 
+console.log(window.localStorage);
 dark.addEventListener("click", () => {
+  darkTheme = true;
   dark.classList.add("dark_mode_none");
   light.classList.remove("dark_mode_none");
+  if (darkTheme == true) {
+    // My comand here
+    document.documentElement.style.setProperty(
+      "--main-white",
+      "rgb(1, 22, 39)"
+    );
+    document.documentElement.style.setProperty(
+      "--main-black",
+      "rgb(237, 242, 244)"
+    );
+    document.documentElement.style.setProperty(
+      "--dark-blue",
+      "rgb(237, 242, 244)"
+    );
+    document.documentElement.style.setProperty(
+      "--main-black",
+      "rgb(237, 242, 244)"
+    );
+    document.documentElement.style.setProperty(
+      "box-shadow-color",
+      "rgba(255, 255, 255, 0.24)"
+    );
+  }
 });
 light.addEventListener("click", () => {
-  dark.classList.remove("dark_mode_none");
+  darkTheme = false;
   light.classList.add("dark_mode_none");
+  dark.classList.remove("dark_mode_none");
+  if (darkTheme == false) {
+    // My comand here
+    document.documentElement.style.setProperty(
+      "--main-white",
+      "rgb(237, 242, 244)"
+    );
+    document.documentElement.style.setProperty(
+      "--main-black",
+      "rgb(1, 22, 39)"
+    );
+    document.documentElement.style.setProperty(
+      "--light-blue",
+      "rgb(69, 123, 157)"
+    );
+    document.documentElement.style.setProperty(
+      "--dark-blue",
+      "rgb(29, 53, 87)"
+    );
+    document.documentElement.style.setProperty(
+      "box-shadow-color",
+      "rgba(1,22,39,0.2)"
+    );
+  }
 });
