@@ -57,7 +57,9 @@ body {
     font-size: var(--title--font-size);
     font-weight: var(--fw-bold);
 }
-
+section {
+    margin-bottom: var(--mb-3);
+}
 .btn {
     border: none;
     outline: none;
@@ -420,6 +422,11 @@ transition: var(--transition);
     .works .title {
         text-align: center;
     }
+}
+/* ==== CONTACT ==== */
+.contact .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 /* ==== SLIDE NAV BAR */
 .slid_nav_bar {
