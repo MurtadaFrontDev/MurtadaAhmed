@@ -424,9 +424,28 @@ transition: var(--transition);
     }
 }
 /* ==== CONTACT ==== */
-.contact .grid_contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contact .title {
+    position: relative;
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+.contact .socil_medi .socil {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: var(--mb-3);
+
+}
+.contact .socil .s-icon {
+        font-size: var(--smal-font-size);
+        font-weight: var(--fw-bold);
+            text-decoration: underline;
+            padding: calc(var(--gap)/2);
+            color: var(--dark-blue);
+}
+.contact .socil .s-icon a {
+    color: var(--dark-blue);
 }
 /* ==== SLIDE NAV BAR */
 .slid_nav_bar {
